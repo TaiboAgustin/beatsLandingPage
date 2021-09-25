@@ -236,6 +236,15 @@ img{
     background-color: var(--body-color);
 }
 
+/*active link*/
+
+.active-link{
+    background: var(--white-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 /*home*/
 
 .home__img{
@@ -462,4 +471,130 @@ img{
     bottom: .5rem;
     padding: .5rem;
     border-radius: .35rem;
+}
+
+/*footer*/
+
+.footer__container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer__logo{
+    width: 2rem;
+}
+
+.footer__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.footer__link{
+    color: var(--text-color);
+}
+
+.footer__link:hover{
+    color: var(--white-color);
+}
+
+.footer__form{
+    display: flex;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.footer__input{
+    background-color: var(--container-color);
+    width: 90%;
+    color: var(--white-color);
+}
+
+.footer__input::placeholder{
+    color: var(--white-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+.footer__social{
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.footer__social-link{
+    display: inline-flex;
+    color: var(--white-color);
+    background-color: var(--container-color);
+    padding: .5rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.footer__social-link:hover{
+    background-color: var(--black-color);
+}
+
+.footer__allright{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__allright-text{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+/*scroll up*/
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    background-color: var(--container-color);
+    border-radius: .25rem;
+    padding: .45rem;
+    opacity: 9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup__icon{
+    color: var(--white-color);
+    font-size: 1.35rem;
+}
+
+.scrollup:hover{
+    background-color: var(--black-color);
+    opacity: 1;
+}
+
+/*show scroll up*/
+.show-scroll{
+    bottom: 5rem;
+}
+
+/*scroll bar*/
+
+::-webkit-scrollbar{
+    width: .60rem;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scoll-thumb-color-alt);
 }
